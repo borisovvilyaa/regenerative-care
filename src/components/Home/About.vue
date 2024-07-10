@@ -104,7 +104,7 @@
         <thead>
           <tr>
             <th></th>
-            <th>RxWound</th>
+            <th>Regenerative Care</th>
             <th>Other Tissue Banks</th>
           </tr>
         </thead>
