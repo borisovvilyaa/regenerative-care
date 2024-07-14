@@ -15,7 +15,7 @@
         quality of life for elderly patients, ensuring comfort and dignity in
         their later years.
       </p>
-      <button class="cta-button">Learn More</button>
+      <!-- <button class="cta-button">Learn More</button> -->
     </div>
   </div>
 </template>
