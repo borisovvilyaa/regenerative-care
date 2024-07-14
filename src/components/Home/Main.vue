@@ -15,6 +15,7 @@
         quality of life for elderly patients, ensuring comfort and dignity in
         their later years.
       </p>
+      <button class="cta-button">Learn More</button>
     </div>
   </div>
 </template>
@@ -90,11 +91,33 @@ export default {
     color: #ffffff;
     font-size: 18px;
     max-width: 800px;
+    font-weight: 100;
+  }
+
+  .cta-button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #007bff; /* Приятный синий цвет */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background-color: #0056b3; /* Более темный оттенок синего при наведении */
   }
 
   @media (max-width: 576px) {
     .subtext {
       font-size: 14px;
+    }
+
+    .cta-button {
+      font-size: 16px;
+      padding: 10px 20px;
     }
   }
 }

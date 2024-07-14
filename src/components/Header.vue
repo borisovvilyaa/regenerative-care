@@ -19,6 +19,7 @@
         aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        @click="toggleMenu"
       >
         <!-- Customize toggler icon for right-to-left animation -->
         <span class="navbar-toggler-icon toggler-right"></span>
@@ -65,6 +66,7 @@ export default {
     return {
       lastScrollTop: 0,
       showHeader: true,
+      isMenuOpen: false, // Track the state of the menu
     };
   },
   mounted() {
@@ -85,6 +87,15 @@ export default {
       }
       this.lastScrollTop = st <= 0 ? 0 : st;
     },
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen;
+      // Toggle body class to prevent scrolling
+      if (this.isMenuOpen) {
+        document.body.classList.add("overflow-hidden");
+      } else {
+        document.body.classList.remove("overflow-hidden");
+      }
+    },
   },
 };
 </script>
@@ -95,11 +106,13 @@ export default {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000; /* Поверх контента */
+  z-index: 1000;
   transition: transform 0.3s ease, opacity 0.3s ease;
-  img {
-    height: 50px;
-  }
+  /* background-color: black !important; Сделать фон полностью черным */
+}
+
+.navbar img {
+  height: 50px;
 }
 
 .header-hidden {
@@ -110,11 +123,13 @@ export default {
 .navbar-toggler {
   border-color: transparent;
   outline: none;
+  &:focus {
+    box-shadow: none;
+  }
 }
 
 /* Custom style for toggler icon */
 .navbar-toggler .toggler-right {
-  /* Right to left animation */
   transform: rotate(180deg);
 }
 
@@ -122,5 +137,39 @@ export default {
 .dropdown-menu-end {
   right: 0;
   left: auto;
+}
+
+/* Make all nav links white */
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding: 0.5rem 1rem; /* Добавим отступы для удобства нажатия */
+}
+
+/* Improve mobile menu links */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    padding: 1rem; /* При необходимости, добавьте отступы */
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 1rem; /* Отступ между элементами меню */
+  }
+
+  .navbar-nav .nav-link {
+    color: white;
+    font-size: 1.2rem; /* Увеличим размер шрифта для удобства */
+    padding: 0.5rem 0; /* Уменьшим вертикальные отступы */
+    display: block;
+    border-bottom: 1px solid #fff;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #ddd; /* Изменение цвета при наведении */
+  }
+}
+
+/* Custom class to disable body scrolling */
+.overflow-hidden {
+  overflow: hidden;
 }
 </style>

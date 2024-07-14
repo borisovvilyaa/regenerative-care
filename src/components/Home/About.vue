@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s">
       <h2 class="title-col">Driving a Healthier Future</h2>
       <div class="d-flex flex-column-reverse flex-md-row">
         <div class="col col-image mb-3 mb-md-0">
@@ -20,7 +20,11 @@
       </div>
     </div>
 
-    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div
+      class="wow animate__animated fadeIn"
+      data-wow-duration="1s"
+      data-wow-delay="0.5s"
+    >
       <h2 class="title-col">Customer Success</h2>
       <div class="d-flex flex-column-reverse flex-md-row">
         <div class="col col-text-section">
@@ -41,7 +45,11 @@
       </div>
     </div>
 
-    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div
+      class="wow animate__animated fadeIn"
+      data-wow-duration="1s"
+      data-wow-delay="0.5s"
+    >
       <h2 class="title-col">DONOR SCREENING</h2>
       <div class="d-flex flex-column-reverse flex-md-row">
         <div class="col col-image mb-3 mb-md-0">
@@ -61,14 +69,14 @@
     </div>
 
     <div
-      class="title-col wow fadeIn"
+      class="title-col wow animate__animated fadeIn"
       data-wow-duration="1s"
       data-wow-delay="0.5s"
     >
       What We Do
     </div>
     <div
-      class="text-col w-100 text-start wow fadeIn"
+      class="text-col w-100 text-start wow animate__animated fadeIn"
       data-wow-duration="1s"
       data-wow-delay="0.5s"
     >
@@ -80,14 +88,14 @@
     </div>
 
     <div
-      class="title-col wow fadeIn"
+      class="title-col wow animate__animated fadeIn"
       data-wow-duration="1s"
       data-wow-delay="0.5s"
     >
       How Do We Compare To Other Tissue Banks?
     </div>
     <div
-      class="text-col w-100 text-start wow fadeIn"
+      class="text-col w-100 text-start wow animate__animated fadeIn"
       data-wow-duration="1s"
       data-wow-delay="0.5s"
     >
@@ -96,7 +104,7 @@
     </div>
 
     <div
-      class="table-responsive wow fadeIn"
+      class="table-responsive wow animate__animated fadeIn"
       data-wow-duration="1s"
       data-wow-delay="0.5s"
     >
@@ -161,14 +169,21 @@
 </template>
 
 <script>
-import "animate.css"; // Import Animate.css styles
-import WOW from "wow.js"; // Import Wow.js
+import "animate.css";
+import WOW from "wow.js";
 
 export default {
   name: "AboutSection",
   mounted() {
-    // Initialize Wow.js when component is mounted
-    new WOW().init();
+    // Initialize WOW.js when component is mounted
+    const wow = new WOW({
+      boxClass: "wow", // Default box class name
+      animateClass: "animate__animated", // Default animation class
+      offset: 200, // Offset (in px) from the top of the window where the animation starts
+      mobile: false, // Whether to detect and animate on mobile devices
+      live: true, // Whether to add the animation class to an element only once
+    });
+    wow.init();
   },
 };
 </script>

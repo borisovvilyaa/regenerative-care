@@ -79,7 +79,7 @@ export default {
 <style scoped>
 .accordion-container {
   width: 100%;
-  max-width: 1200px; /* Максимальная ширина аккордеона */
+  max-width: 1200px;
   margin: 0 auto;
   padding-bottom: 100px;
   padding-top: 100px;
@@ -107,9 +107,9 @@ export default {
   padding: 10px;
   cursor: pointer;
   border-bottom: 1px solid black;
-  white-space: nowrap; /* Предотвращает перенос текста на несколько строк */
-  overflow: hidden; /* Предотвращает вылазание контента за пределы */
-  text-overflow: ellipsis; /* Обрезает текст, если он слишком длинный */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 2rem;
 }
 
@@ -141,5 +141,17 @@ export default {
 
 .rotate-icon {
   transform: rotate(180deg);
+}
+
+/* Медиазапросы для адаптации под мобильные устройства */
+@media (max-width: 600px) {
+  .accordion-header {
+    font-size: 1.5rem;
+    white-space: normal;
+  }
+
+  .accordion-body {
+    font-size: 1rem;
+  }
 }
 </style>
