@@ -1,43 +1,71 @@
 <template>
-  <footer class="footer bg-black text-white">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6">
-          <h5>Regenerative Care</h5>
-          <p>833-Regenerative Care</p>
-        </div>
-        <div class="col-md-6 text-end">
-          <ul class="nav">
-            <li class="nav-item">
-              <router-link class="nav-link" to="/">Home</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/about-company"
-                >About Company</router-link
-              >
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/regenerative-care"
-                >Regenerative Care</router-link
-              >
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/results">Results</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/doctors-suppliers"
-                >Doctors, Suppliers</router-link
-              >
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/faq">FAQ</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/contacts"
-                >Contacts</router-link
-              >
-            </li>
-          </ul>
+  <footer id="footer" class="footer-1">
+    <div
+      class="main-footer widgets-dark typo-light"
+      style="background-color: black; color: white"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget subscribe no-box">
+              <h5 class="widget-title">RegenerativeCare<span></span></h5>
+              <p>
+                Regenerative Care: Enhancing Seniors' Quality of Life Nationwide
+              </p>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget no-box">
+              <h5 class="widget-title">Quick Links<span></span></h5>
+              <ul class="thumbnail-widget">
+                <li>
+                  <div class="thumb-content">
+                    <a href="#." style="color: white">About Company</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="thumb-content">
+                    <a href="#." style="color: white">Regenerative Care</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="thumb-content">
+                    <a href="#." style="color: white">Contacts</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget no-box">
+              <h5 class="widget-title">Contact Us<span></span></h5>
+              <ul class="thumbnail-widget">
+                <li><div class="thumb-content">info@domain.com</div></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget no-box">
+              <h5 class="widget-title">Follow Us<span></span></h5>
+              <div class="social-icons">
+                <a href="#." class="social-icon">
+                  <i class="bi bi-facebook"></i
+                ></a>
+                <a href="#." class="social-icon">
+                  <i class="bi bi-twitter"></i
+                ></a>
+                <a href="#." class="social-icon">
+                  <i class="bi bi-instagram"></i
+                ></a>
+                <a href="#." class="social-icon">
+                  <i class="bi bi-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -46,23 +74,80 @@
 
 <script>
 export default {
-  name: "MainFooter",
+  name: "FooterS",
 };
 </script>
 
 <style scoped>
-.footer {
-  padding: 20px 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  a {
-    color: white;
-    font-weight: 100;
-  }
+/* Footer styles */
+#footer {
+  padding: 60px 0;
 }
 
-.bg-black {
-  background-color: #000; /* Черный цвет фона */
+.main-footer {
+  padding: 50px 0;
+}
+
+.widget-title {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.widget-title span {
+  background-color: white;
+  display: block;
+  height: 1px;
+  width: 50px;
+  margin-top: 10px;
+  bottom: 0;
+  left: 0;
+}
+
+.widget p {
+  color: white;
+}
+
+.thumbnail-widget {
+  list-style: none;
+  padding: 0;
+}
+
+.thumb-content {
+  margin-bottom: 10px;
+}
+
+.thumb-content a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.thumb-content a:hover {
+  color: #cccccc;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #cccccc;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  .main-footer .col-sm-6 {
+    margin-bottom: 30px;
+  }
 }
 </style>

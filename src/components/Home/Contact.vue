@@ -6,7 +6,7 @@
           <h3>Get in Touch</h3>
         </div>
         <div class="col-md-6">
-          <ul>
+          <ul class="contact-list">
             <li>833-Regenerative Care</li>
             <li>
               NEW CUSTOMERS:
@@ -45,8 +45,49 @@ export default {
   background: white;
 
   h3 {
-    font-size: 50px;
-    font-weight: 100;
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    color: #555;
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #0056b3;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .row {
+      flex-direction: column;
+
+      .col-md-6 {
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        font-size: 30px;
+      }
+
+      .contact-list {
+        font-size: 14px;
+      }
+    }
   }
 }
 </style>
