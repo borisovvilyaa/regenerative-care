@@ -108,7 +108,7 @@ export default {
   right: 0;
   z-index: 1000;
   transition: transform 0.3s ease, opacity 0.3s ease;
-  /* background-color: black !important; Сделать фон полностью черным */
+  background-color: black !important;
 }
 
 .navbar img {
