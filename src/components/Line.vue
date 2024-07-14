@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div
-      class="line-colon"
+      class="line-colon wow animate__animated animate__fadeIn"
       :class="{
         'dark-theme': theme === 'dark',
         'light-theme': theme === 'light',
@@ -23,6 +23,9 @@
 </template>
 
 <script>
+import { WOW } from "wowjs";
+import "animate.css";
+
 export default {
   name: "LineSection",
   props: {
@@ -34,6 +37,9 @@ export default {
       type: String,
       default: "light",
     },
+  },
+  mounted() {
+    new WOW().init();
   },
 };
 </script>
@@ -47,6 +53,7 @@ export default {
     font-size: 26px;
   }
 }
+
 .line-container {
   height: 1px;
   width: 100%;

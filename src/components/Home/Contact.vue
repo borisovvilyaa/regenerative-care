@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="main wow animate__animated animate__fadeIn">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -34,8 +34,14 @@
 </template>
 
 <script>
+import { WOW } from "wowjs";
+import "animate.css";
+
 export default {
   name: "ContactSection",
+  mounted() {
+    new WOW().init();
+  },
 };
 </script>
 

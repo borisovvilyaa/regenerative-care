@@ -2,27 +2,36 @@
   <div class="main">
     <div class="container">
       <h2>
-        <span class="journey">YOUR JOURNEY TO RECOVERY</span>
+        <span class="journey wow animate__animated animate__fadeInLeft"
+          >YOUR JOURNEY TO RECOVERY</span
+        >
         <br />
-        <span class="begins-now">BEGINS NOW</span>
+        <span class="begins-now wow animate__animated animate__fadeInRight"
+          >BEGINS NOW</span
+        >
       </h2>
-      <h3 class="subtitle">
+      <h3 class="subtitle wow animate__animated animate__fadeInUp">
         Regenerative Care: Enhancing Seniors' Quality of Life Nationwide
       </h3>
-      <p class="subtext">
+      <p class="subtext wow animate__animated animate__fadeInUp">
         Founded in 2015, Regenerative Care has grown into a dedicated team
         serving seniors across all 50 states. Our mission is to enhance the
         quality of life for elderly patients, ensuring comfort and dignity in
         their later years.
       </p>
-      <!-- <button class="cta-button">Learn More</button> -->
     </div>
   </div>
 </template>
 
 <script>
+import { WOW } from "wowjs";
+import "animate.css";
+
 export default {
   name: "MainSection",
+  mounted() {
+    new WOW().init();
+  },
 };
 </script>
 

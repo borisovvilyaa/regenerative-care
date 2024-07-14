@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s">
+    <div>
       <h2 class="title-col">Driving a Healthier Future</h2>
       <div class="d-flex flex-column-reverse flex-md-row">
         <div class="col col-image mb-3 mb-md-0">
@@ -20,11 +20,7 @@
       </div>
     </div>
 
-    <div
-      class="wow animate__animated fadeIn"
-      data-wow-duration="1s"
-      data-wow-delay="0.5s"
-    >
+    <div>
       <h2 class="title-col">Customer Success</h2>
       <div class="d-flex flex-column-reverse flex-md-row">
         <div class="col col-text-section">
@@ -45,11 +41,7 @@
       </div>
     </div>
 
-    <div
-      class="wow animate__animated fadeIn"
-      data-wow-duration="1s"
-      data-wow-delay="0.5s"
-    >
+    <div>
       <h2 class="title-col">DONOR SCREENING</h2>
       <div class="d-flex flex-column-reverse flex-md-row">
         <div class="col col-image mb-3 mb-md-0">
@@ -68,18 +60,8 @@
       </div>
     </div>
 
-    <div
-      class="title-col wow animate__animated fadeIn"
-      data-wow-duration="1s"
-      data-wow-delay="0.5s"
-    >
-      What We Do
-    </div>
-    <div
-      class="text-col w-100 text-start wow animate__animated fadeIn"
-      data-wow-duration="1s"
-      data-wow-delay="0.5s"
-    >
+    <div class="title-col">What We Do</div>
+    <div class="text-col w-100 text-start">
       At Regenerative Care, we supply physicians with amniotic membrane
       allografts for the treatment of chronic wounds. Our grafts are
       FDA-registered, safe, chorion-free, and tested for communicable diseases.
@@ -87,27 +69,13 @@
       consistent reimbursement. For more information, visit our FAQ page.
     </div>
 
-    <div
-      class="title-col wow animate__animated fadeIn"
-      data-wow-duration="1s"
-      data-wow-delay="0.5s"
-    >
-      How Do We Compare To Other Tissue Banks?
-    </div>
-    <div
-      class="text-col w-100 text-start wow animate__animated fadeIn"
-      data-wow-duration="1s"
-      data-wow-delay="0.5s"
-    >
+    <div class="title-col">How Do We Compare To Other Tissue Banks?</div>
+    <div class="text-col w-100 text-start">
       At Regenerative Care, we are proud to be trusted by medical professionals
       across the country. Here’s how we stand out:
     </div>
 
-    <div
-      class="table-responsive wow animate__animated fadeIn"
-      data-wow-duration="1s"
-      data-wow-delay="0.5s"
-    >
+    <div class="table-responsive">
       <table class="table table-bordered table-dark mt-5 mb-5 rounded">
         <thead>
           <tr>
@@ -169,22 +137,8 @@
 </template>
 
 <script>
-import "animate.css";
-import WOW from "wow.js";
-
 export default {
   name: "AboutSection",
-  mounted() {
-    // Initialize WOW.js when component is mounted
-    const wow = new WOW({
-      boxClass: "wow", // Default box class name
-      animateClass: "animate__animated", // Default animation class
-      offset: 200, // Offset (in px) from the top of the window where the animation starts
-      mobile: false, // Whether to detect and animate on mobile devices
-      live: true, // Whether to add the animation class to an element only once
-    });
-    wow.init();
-  },
 };
 </script>
 
