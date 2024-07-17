@@ -1,12 +1,20 @@
 <template>
   <div class="container">
     <div>
-      <h2 class="title-col">Driving a Healthier Future</h2>
+      <h2
+        class="title-col wow animate__animated animate__fadeInUp animate__fast"
+      >
+        Driving a Healthier Future
+      </h2>
       <div class="d-flex flex-column-reverse flex-md-row">
-        <div class="col col-image mb-3 mb-md-0">
+        <div
+          class="col col-image mb-3 mb-md-0 wow animate__animated animate__fadeInUp animate__fast"
+        >
           <img src="@/assets/Home/About/Holding.webp" alt="About Image" />
         </div>
-        <div class="col col-text-section">
+        <div
+          class="col col-text-section wow animate__animated animate__fadeInUp animate__fast"
+        >
           <p class="text-col">
             Our mission is to provide physicians with the best solutions for
             their patients. We collaborate closely with facilities and
@@ -21,9 +29,15 @@
     </div>
 
     <div>
-      <h2 class="title-col">Customer Success</h2>
+      <h2
+        class="title-col wow animate__animated animate__fadeInUp animate__fast"
+      >
+        Customer Success
+      </h2>
       <div class="d-flex flex-column-reverse flex-md-row">
-        <div class="col col-text-section">
+        <div
+          class="col col-text-section wow animate__animated animate__fadeInUp animate__fast"
+        >
           <p class="text-col">
             Historically, we fulfill over 98% of orders placed, responding to
             requests in five minutes or less. Through our efforts to support
@@ -35,19 +49,29 @@
             through each phase of the allograft order and distribution process.
           </p>
         </div>
-        <div class="col col-image mb-3 mb-md-0">
+        <div
+          class="col col-image mb-3 mb-md-0 wow animate__animated animate__fadeInUp animate__fast"
+        >
           <img src="@/assets/Home/About/Doctor.webp" alt="Doctor Image" />
         </div>
       </div>
     </div>
 
     <div>
-      <h2 class="title-col">DONOR SCREENING</h2>
+      <h2
+        class="title-col wow animate__animated animate__fadeInUp animate__fast"
+      >
+        Donor Screening
+      </h2>
       <div class="d-flex flex-column-reverse flex-md-row">
-        <div class="col col-image mb-3 mb-md-0">
+        <div
+          class="col col-image mb-3 mb-md-0 wow animate__animated animate__fadeInUp animate__fast"
+        >
           <img src="@/assets/Home/About/Baby.webp" alt="Baby Image" />
         </div>
-        <div class="col col-text-section">
+        <div
+          class="col col-text-section wow animate__animated animate__fadeInUp animate__fast"
+        >
           <p class="text-col">
             All donors are recovered in the United States and meet FDA, AATB,
             and applicable state requirements. Potential donors are screened for
@@ -60,8 +84,14 @@
       </div>
     </div>
 
-    <div class="title-col">What We Do</div>
-    <div class="text-col w-100 text-start">
+    <div
+      class="title-col wow animate__animated animate__fadeInUp animate__fast"
+    >
+      What We Do
+    </div>
+    <div
+      class="text-col w-100 text-start wow animate__animated animate__fadeInUp animate__fast"
+    >
       At Regenerative Care, we supply physicians with amniotic membrane
       allografts for the treatment of chronic wounds. Our grafts are
       FDA-registered, safe, chorion-free, and tested for communicable diseases.
@@ -69,13 +99,21 @@
       consistent reimbursement. For more information, visit our FAQ page.
     </div>
 
-    <div class="title-col">How Do We Compare To Other Tissue Banks?</div>
-    <div class="text-col w-100 text-start">
+    <div
+      class="title-col wow animate__animated animate__fadeInUp animate__fast"
+    >
+      How Do We Compare To Other Tissue Banks?
+    </div>
+    <div
+      class="text-col w-100 text-start wow animate__animated animate__fadeInUp animate__fast"
+    >
       At Regenerative Care, we are proud to be trusted by medical professionals
       across the country. Here’s how we stand out:
     </div>
 
-    <div class="table-responsive">
+    <div
+      class="table-responsive wow animate__animated animate__fadeInUp animate__fast"
+    >
       <table class="table table-bordered table-dark mt-5 mb-5 rounded">
         <thead>
           <tr>
@@ -137,8 +175,14 @@
 </template>
 
 <script>
+import { WOW } from "wowjs";
+import "animate.css";
+
 export default {
   name: "AboutSection",
+  mounted() {
+    new WOW().init();
+  },
 };
 </script>
 
@@ -195,5 +239,9 @@ export default {
     margin-top: 100px;
     margin-bottom: 30px;
   }
+}
+
+.animate__fast {
+  animation-duration: 0.5s !important;
 }
 </style>

@@ -3,8 +3,10 @@
     <Line message="Regenerative Care" theme="dark"></Line>
 
     <div class="container">
-      <div class="title-col">Regenerative Care</div>
-      <div class="text-col text-start">
+      <div class="title-col wow animate__animated animate__fadeInUp">
+        Regenerative Care
+      </div>
+      <div class="text-col text-start wow animate__animated animate__fadeInUp">
         <span class="fw-bold">- Welcome to Regenerative Care</span>, your
         trusted partner in comprehensive wound care solutions. At Regenerative
         Care, we understand the challenges and complexities associated with
@@ -13,12 +15,18 @@
       </div>
 
       <!-- Podiatrists Section -->
-      <h2 class="title-col">Insurance Verification Request</h2>
+      <h2 class="title-col wow animate__animated animate__fadeInUp">
+        Insurance Verification Request
+      </h2>
       <div class="d-flex flex-column-reverse flex-md-row">
-        <div class="col col-image mb-3 mb-md-0">
+        <div
+          class="col col-image mb-3 mb-md-0 wow animate__animated animate__fadeInUp"
+        >
           <img src="@/assets/Home/RC/Insurance.jpg" alt="About Image" />
         </div>
-        <div class="col col-text-section">
+        <div
+          class="col col-text-section wow animate__animated animate__fadeInUp"
+        >
           <p class="text-col">
             Identify your patient or patients with a chronic wound. In order for
             our Insurance Verification Request to get approved, the patient
@@ -30,9 +38,11 @@
       </div>
 
       <!-- Dermatologists Section -->
-      <h2 class="title-col">Healing</h2>
+      <h2 class="title-col wow animate__animated animate__fadeInUp">Healing</h2>
       <div class="d-flex flex-column-reverse flex-md-row">
-        <div class="col col-text-section">
+        <div
+          class="col col-text-section wow animate__animated animate__fadeInUp"
+        >
           <p class="text-col">
             Once you receive your Amniotic Tissue you're ready to apply it to
             the chronic wound. Take pictures before each application with the
@@ -41,18 +51,26 @@
             healing and that the proper size patch was used during treatment.
           </p>
         </div>
-        <div class="col col-image mb-3 mb-md-0">
+        <div
+          class="col col-image mb-3 mb-md-0 wow animate__animated animate__fadeInUp"
+        >
           <img src="@/assets/Home/RC/Healing.jpg" alt="Doctor Image" />
         </div>
       </div>
 
       <!-- Surgeons Section -->
-      <h2 class="title-col">Clawbacks</h2>
+      <h2 class="title-col wow animate__animated animate__fadeInUp">
+        Clawbacks
+      </h2>
       <div class="d-flex flex-column-reverse flex-md-row">
-        <div class="col col-image mb-3 mb-md-0">
+        <div
+          class="col col-image mb-3 mb-md-0 wow animate__animated animate__fadeInUp"
+        >
           <img src="@/assets/Home/RC/Clawbacks.jpg" alt="Baby Image" />
         </div>
-        <div class="col col-text-section">
+        <div
+          class="col col-text-section wow animate__animated animate__fadeInUp"
+        >
           <p class="text-col">
             Our wound billing specialists will comb through your medical notes
             in your EMR to make sure the proper verbiage is used to avoid any
@@ -68,11 +86,16 @@
 
 <script>
 import Line from "../Line.vue";
+import { WOW } from "wowjs";
+import "animate.css";
 
 export default {
   name: "RegenerativeCare",
   components: {
     Line,
+  },
+  mounted() {
+    new WOW().init();
   },
 };
 </script>
