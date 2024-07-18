@@ -27,38 +27,34 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <router-link class="nav-link" to="/">Home</router-link>
+            <a class="nav-link" href="/" @click="toggleMenu">Home</a>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/about-company"
-              >About Company</router-link
+            <a class="nav-link" href="/about-company" @click="toggleMenu"
+              >About Company</a
             >
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/regenerative-care"
-              >Regenerative Care</router-link
+            <a class="nav-link" href="/regenerative-care" @click="toggleMenu"
+              >Regenerative Care</a
             >
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/results">Results</router-link>
+            <a class="nav-link" href="/doctors" @click="toggleMenu">Doctors</a>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/doctors-suppliers"
-              >Doctors, Suppliers</router-link
+            <a class="nav-link" href="/faq" @click="toggleMenu">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contacts" @click="toggleMenu"
+              >Contacts</a
             >
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/faq">FAQ</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/contacts">Contacts</router-link>
           </li>
         </ul>
       </div>
     </div>
   </header>
 </template>
-
 <script>
 export default {
   name: "MainHeader",
