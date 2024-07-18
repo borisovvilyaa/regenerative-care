@@ -4,13 +4,13 @@
     :class="{ 'header-hidden': !showHeader }"
   >
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <router-link to="/" class="navbar-brand">
         <img
           src="@/assets/logo.svg"
           alt="Logo"
           class="d-inline-block align-text-top"
         />
-      </a>
+      </router-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -24,42 +24,42 @@
         <!-- Customize toggler icon for right-to-left animation -->
         <span class="navbar-toggler-icon toggler-right"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div
+        class="collapse navbar-collapse"
+        :class="{ show: isMenuOpen }"
+        id="navbarNav"
+      >
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <router-link class="nav-link" to="/" @click="toggleMenu"
+            <router-link to="/" class="nav-link" @click="closeMenu"
               >Home</router-link
             >
           </li>
           <li class="nav-item">
-            <router-link
-              class="nav-link"
-              to="/about-company"
-              @click="toggleMenu"
+            <router-link to="/about-company" class="nav-link" @click="closeMenu"
               >About Company</router-link
             >
           </li>
           <li class="nav-item">
             <router-link
-              class="nav-link"
               to="/regenerative-care"
-              @click="toggleMenu"
+              class="nav-link"
+              @click="closeMenu"
               >Regenerative Care</router-link
             >
           </li>
-
           <li class="nav-item">
-            <router-link class="nav-link" to="/doctors" @click="toggleMenu"
+            <router-link to="/doctors" class="nav-link" @click="closeMenu"
               >Doctors</router-link
             >
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/faq" @click="toggleMenu"
+            <router-link to="/faq" class="nav-link" @click="closeMenu"
               >FAQ</router-link
             >
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/contacts" @click="toggleMenu"
+            <router-link to="/contacts" class="nav-link" @click="closeMenu"
               >Contacts</router-link
             >
           </li>
@@ -76,7 +76,7 @@ export default {
     return {
       lastScrollTop: 0,
       showHeader: true,
-      isMenuOpen: false, // Track the state of the menu
+      isMenuOpen: false,
     };
   },
   mounted() {
@@ -88,11 +88,10 @@ export default {
   methods: {
     handleScroll() {
       const st = window.pageYOffset || document.documentElement.scrollTop;
-      if (st > this.lastScrollTop) {
-        // Downscroll code
+      if (st > this.lastScrollTop && st > 100) {
+        // Adjust the scroll distance as needed
         this.showHeader = false;
       } else {
-        // Upscroll code
         this.showHeader = true;
       }
       this.lastScrollTop = st <= 0 ? 0 : st;
@@ -106,6 +105,15 @@ export default {
         document.body.classList.remove("overflow-hidden");
       }
     },
+    closeMenu() {
+      this.isMenuOpen = false;
+      document.body.classList.remove("overflow-hidden");
+    },
+  },
+  beforeRouteUpdate(to, from, next) {
+    // Scroll to top of the page when route changes
+    window.scrollTo(0, 0);
+    next();
   },
 };
 </script>
@@ -114,14 +122,15 @@ export default {
 header {
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Updated transition properties */
 }
+
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  transition: transform 0.3s ease, opacity 0.3s ease;
   background-color: black !important;
 }
 
@@ -156,29 +165,29 @@ header {
 /* Make all nav links white */
 .navbar-dark .navbar-nav .nav-link {
   color: white;
-  padding: 0.5rem 1rem; /* Добавим отступы для удобства нажатия */
+  padding: 0.5rem 1rem; /* Add padding for easier clicking */
 }
 
 /* Improve mobile menu links */
 @media (max-width: 991.98px) {
   .navbar-collapse {
-    padding: 1rem; /* При необходимости, добавьте отступы */
+    padding: 1rem; /* Add padding if necessary */
   }
 
   .navbar-nav .nav-item {
-    margin-bottom: 1rem; /* Отступ между элементами меню */
+    margin-bottom: 1rem; /* Margin between menu items */
   }
 
   .navbar-nav .nav-link {
     color: white;
-    font-size: 1.2rem; /* Увеличим размер шрифта для удобства */
-    padding: 0.5rem 0; /* Уменьшим вертикальные отступы */
+    font-size: 1.2rem; /* Increase font size for better visibility */
+    padding: 0.5rem 0; /* Reduce vertical padding */
     display: block;
     border-bottom: 1px solid #fff;
   }
 
   .navbar-nav .nav-link:hover {
-    color: #ddd; /* Изменение цвета при наведении */
+    color: #ddd; /* Change color on hover */
   }
 }
 
