@@ -11,7 +11,7 @@
         <div
           class="col col-image mb-3 mb-md-0 wow animate__animated animate__fadeInUp"
         >
-          <img src="@/assets/Home/RC/Insurance.jpg" alt="About Image" />
+          <img src="@/assets/Home/RC/insurance.png" alt="About Image" />
         </div>
         <div
           class="col col-text-section wow animate__animated animate__fadeInUp"
@@ -45,7 +45,7 @@
         <div
           class="col col-image mb-3 mb-md-0 wow animate__animated animate__fadeInUp"
         >
-          <img src="@/assets/Home/RC/Healing.jpg" alt="Doctor Image" />
+          <img src="@/assets/Home/RC/healing.png" alt="Doctor Image" />
         </div>
       </div>
 
@@ -57,7 +57,7 @@
         <div
           class="col col-image mb-3 mb-md-0 wow animate__animated animate__fadeInUp"
         >
-          <img src="@/assets/Home/RC/Clawbacks.jpg" alt="Baby Image" />
+          <img src="@/assets/Home/RC/clawbacks.png" alt="Baby Image" />
         </div>
         <div
           class="col col-text-section wow animate__animated animate__fadeInUp"
