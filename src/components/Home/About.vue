@@ -1,10 +1,10 @@
 <template>
-  <div class="container">
+  <div class="container" id="About">
     <div>
       <h2
         class="title-col wow animate__animated animate__fadeInUp animate__fast"
       >
-        Driving a Healthier Future
+        Excellence in Physician Support
       </h2>
       <div class="d-flex flex-column-reverse flex-md-row">
         <div
@@ -16,13 +16,14 @@
           class="col col-text-section wow animate__animated animate__fadeInUp animate__fast"
         >
           <p class="text-col">
-            Our mission is to provide physicians with the best solutions for
-            their patients. We collaborate closely with facilities and
-            distributor partners to simplify the ordering process, ensure
-            product supply, arrange convenient and timely delivery, maintain
-            inventory levels, and streamline invoicing. Regenerative Care offers
-            nearly every allograft processing and preservation technique
-            available today to meet the unique needs of physicians and patients.
+            Providing physicians with exceptional solutions for their patients
+            is our primary mission. Through close partnerships with healthcare
+            facilities and distributors, we streamline the ordering process,
+            ensure reliable product availability, arrange timely and convenient
+            deliveries, maintain optimal inventory levels, and simplify
+            invoicing procedures. Regenerative Care offers a wide range of
+            allograft processing and preservation techniques to address the
+            unique needs of both physicians and patients.
           </p>
         </div>
       </div>
@@ -32,21 +33,21 @@
       <h2
         class="title-col wow animate__animated animate__fadeInUp animate__fast"
       >
-        Customer Success
+        Dedicated Support & Success
       </h2>
       <div class="d-flex flex-column-reverse flex-md-row">
         <div
           class="col col-text-section wow animate__animated animate__fadeInUp animate__fast"
         >
           <p class="text-col">
-            Historically, we fulfill over 98% of orders placed, responding to
-            requests in five minutes or less. Through our efforts to support
-            physicians and patients, we have developed a clinically minded
-            Customer Success support team. The Regenerative Care team
-            understands your specific case needs and is dedicated to ensuring
-            you get the correct graft, on time, every time. We pride ourselves
-            on supporting our clients with a comprehensive 360-degree approach
-            through each phase of the allograft order and distribution process.
+            We consistently respond to requests within five minutes, ensuring
+            prompt and reliable service. Our commitment to supporting physicians
+            and patients has led to the development of a clinically focused
+            Customer Success team. The Regenerative Care team understands your
+            specific case needs and is dedicated to delivering the correct
+            graft, on time, every time. We take pride in offering comprehensive
+            support throughout each phase of the allograft order and
+            distribution process, using a 360-degree approach to client care.
           </p>
         </div>
         <div
@@ -64,11 +65,12 @@
     <div
       class="text-col w-100 text-start wow animate__animated animate__fadeInUp animate__fast pb-5"
     >
-      At Regenerative Care, we supply physicians with amniotic membrane
-      allografts for the treatment of chronic wounds. Our grafts are
-      FDA-registered, safe, chorion-free, and tested for communicable diseases.
-      We ensure ethical procurement and provide back office support to guarantee
-      consistent reimbursement. For more information, visit our FAQ page.
+      Regenerative Care offers physicians top-quality amniotic membrane
+      allografts for chronic wound treatment. Our grafts, which are
+      FDA-registered and chorion-free, undergo stringent testing for
+      communicable diseases to ensure safety. We adhere to ethical procurement
+      standards and provide comprehensive back office support to facilitate
+      consistent reimbursement. For more details, please visit our FAQ page.
     </div>
   </div>
 </template>

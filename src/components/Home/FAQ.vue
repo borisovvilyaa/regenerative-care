@@ -1,5 +1,5 @@
 <template>
-  <div class="accordion-container">
+  <div class="accordion-container" id="FAQ">
     <div class="accordion">
       <div v-for="(faq, index) in faqs" :key="index" class="accordion-item">
         <div class="accordion-header" @click="toggleAccordion(index)">

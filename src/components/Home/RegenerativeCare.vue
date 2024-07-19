@@ -1,11 +1,11 @@
 <template>
-  <div class="main">
+  <div class="main" id="WhatWeDo">
     <Line message="What we do" theme="dark"></Line>
 
     <div class="container">
       <!-- Podiatrists Section -->
       <h2 class="title-col wow animate__animated animate__fadeInUp">
-        How we verified payment insurance
+        How we verify payment insurance
       </h2>
       <div class="d-flex flex-column-reverse flex-md-row">
         <div
@@ -28,18 +28,18 @@
 
       <!-- Dermatologists Section -->
       <h2 class="title-col wow animate__animated animate__fadeInUp">
-        How your payment field
+        How our patients heals
       </h2>
       <div class="d-flex flex-column-reverse flex-md-row">
         <div
           class="col col-text-section wow animate__animated animate__fadeInUp"
         >
           <p class="text-col">
-            Once you receive your Amniotic Tissue you're ready to apply it to
-            the chronic wound. Take pictures before each application with the
-            ruler included in your shipment. This will prove medical necessity
-            as you reapply your Amniotic Tissue each week to show the wound is
-            healing and that the proper size patch was used during treatment.
+            After receiving your Amniotic Tissue, you can begin applying it to
+            the chronic wound. Be sure to take photos before each application
+            using the included ruler. These photos will demonstrate the medical
+            necessity of the treatment, show the progress of healing, and
+            confirm that the appropriate size patch was used each week.
           </p>
         </div>
         <div

@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="main" id="Home">
     <div class="container">
       <h2>
         <span class="journey wow animate__animated animate__fadeInLeft"

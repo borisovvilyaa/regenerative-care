@@ -1,5 +1,5 @@
 <template>
-  <div class="main wow animate__animated animate__fadeIn">
+  <div class="main wow animate__animated animate__fadeIn" id="Contacts">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
