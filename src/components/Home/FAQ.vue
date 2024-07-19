@@ -106,20 +106,20 @@ export default {
 }
 
 .accordion-item {
-  background-color: black;
-  border: 1px solid black;
+  background-color: #054052;
+  border: 1px solid #054052;
   margin-bottom: 10px;
   border-radius: 5px;
 }
 
 .accordion-header {
   font-weight: 100;
-  background-color: black;
+  background-color: #054052;
   border-bottom: 1px solid white !important;
   color: white;
   padding: 10px;
   cursor: pointer;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #054052;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -127,7 +127,7 @@ export default {
 }
 
 .accordion-header:hover {
-  background-color: #333;
+  background-color: #054d52;
 }
 
 .accordion-body {

@@ -2,7 +2,7 @@
   <footer id="footer" class="footer-1">
     <div
       class="main-footer widgets-dark typo-light"
-      style="background-color: black; color: white"
+      style="background-color: #054052; color: white"
     >
       <div class="container">
         <div class="row">

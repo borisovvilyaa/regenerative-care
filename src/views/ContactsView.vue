@@ -16,8 +16,8 @@ export default {
 };
 </script>
 
-<style>
+<!-- <style>
 body {
   background: #000 !important;
 }
-</style>
+</style> -->

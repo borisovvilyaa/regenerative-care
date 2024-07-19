@@ -131,7 +131,7 @@ header {
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: black !important;
+  background-color: #054052 !important;
 }
 
 .navbar img {

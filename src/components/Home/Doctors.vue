@@ -115,13 +115,13 @@ export default {
 }
 
 .btn-get {
-  background-color: #000;
+  background-color: #054052;
   color: #fff;
   border-radius: 0;
   padding: 10px 120px;
   transition: 0.3s;
   &:hover {
-    background-color: #000000c2;
+    background-color: #055241;
     color: #fff;
     transition: 0.3s;
   }
