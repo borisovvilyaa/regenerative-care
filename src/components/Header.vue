@@ -45,14 +45,17 @@
               to="/regenerative-care"
               class="nav-link"
               @click="closeMenu"
-              >Regenerative Care</router-link
+              >What we do</router-link
             >
           </li>
+          <!---
           <li class="nav-item">
             <router-link to="/doctors" class="nav-link" @click="closeMenu"
               >Doctors</router-link
             >
-          </li>
+          </li>     
+          -->
+
           <li class="nav-item">
             <router-link to="/faq" class="nav-link" @click="closeMenu"
               >FAQ</router-link

@@ -1,22 +1,11 @@
 <template>
   <div class="main">
-    <Line message="Regenerative Care" theme="dark"></Line>
+    <Line message="What we do" theme="dark"></Line>
 
     <div class="container">
-      <div class="title-col wow animate__animated animate__fadeInUp">
-        Regenerative Care
-      </div>
-      <div class="text-col text-start wow animate__animated animate__fadeInUp">
-        <span class="fw-bold">- Welcome to Regenerative Care</span>, your
-        trusted partner in comprehensive wound care solutions. At Regenerative
-        Care, we understand the challenges and complexities associated with
-        wound management. That's why we are dedicated to offering advanced
-        products and resources to support optimal healing outcomes.
-      </div>
-
       <!-- Podiatrists Section -->
       <h2 class="title-col wow animate__animated animate__fadeInUp">
-        Insurance Verification Request
+        How we verified payment insurance
       </h2>
       <div class="d-flex flex-column-reverse flex-md-row">
         <div
@@ -32,13 +21,15 @@
             our Insurance Verification Request to get approved, the patient
             needs medical notes proving treatment has been attempted to heal the
             chronic wound for over 30 days. After IVR is approved, we will ship
-            you your Amniotic Tissue on net pay 60 terms.
+            you your Amniotic Tissue
           </p>
         </div>
       </div>
 
       <!-- Dermatologists Section -->
-      <h2 class="title-col wow animate__animated animate__fadeInUp">Healing</h2>
+      <h2 class="title-col wow animate__animated animate__fadeInUp">
+        How your payment field
+      </h2>
       <div class="d-flex flex-column-reverse flex-md-row">
         <div
           class="col col-text-section wow animate__animated animate__fadeInUp"
@@ -60,7 +51,7 @@
 
       <!-- Surgeons Section -->
       <h2 class="title-col wow animate__animated animate__fadeInUp">
-        Clawbacks
+        How we provide clawbacks
       </h2>
       <div class="d-flex flex-column-reverse flex-md-row">
         <div

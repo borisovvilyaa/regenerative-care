@@ -14,10 +14,11 @@
         Regenerative Care: Enhancing Seniors' Quality of Life Nationwide
       </h3>
       <p class="subtext wow animate__animated animate__fadeInUp">
-        Founded in 2015, Regenerative Care has grown into a dedicated team
-        serving seniors across all 50 states. Our mission is to enhance the
-        quality of life for elderly patients, ensuring comfort and dignity in
-        their later years.
+        Regenerative Care is transforming wound healing with advanced solutions
+        and top amniotic allografting products. Partnering with leading experts,
+        we ensure precise application through our network of certified
+        physicians, enhancing patient outcomes. Committed to innovation, we
+        bring hope and recovery to many.
       </p>
     </div>
   </div>
