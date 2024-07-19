@@ -21,17 +21,17 @@
               <ul class="thumbnail-widget">
                 <li>
                   <div class="thumb-content">
-                    <a href="#." style="color: white">About Company</a>
+                    <a href="/#About" style="color: white">About Company</a>
                   </div>
                 </li>
                 <li>
                   <div class="thumb-content">
-                    <a href="#." style="color: white">Regenerative Care</a>
+                    <a href="/#WhatWeDo" style="color: white">What We Do</a>
                   </div>
                 </li>
                 <li>
                   <div class="thumb-content">
-                    <a href="#." style="color: white">Contacts</a>
+                    <a href="/#Contats" style="color: white">Contacts</a>
                   </div>
                 </li>
               </ul>

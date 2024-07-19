@@ -10,7 +10,7 @@
         <div
           class="col col-image mb-3 mb-md-0 wow animate__animated animate__fadeInUp animate__fast"
         >
-          <img src="@/assets/Home/About/Holding.webp" alt="About Image" />
+          <img src="@/assets/Home/About/support.png" alt="About Image" />
         </div>
         <div
           class="col col-text-section wow animate__animated animate__fadeInUp animate__fast"
@@ -53,7 +53,7 @@
         <div
           class="col col-image mb-3 mb-md-0 wow animate__animated animate__fadeInUp animate__fast"
         >
-          <img src="@/assets/Home/About/Doctor.webp" alt="Doctor Image" />
+          <img src="@/assets/Home/About/GetItTouch.png" alt="Doctor Image" />
         </div>
       </div>
     </div>
