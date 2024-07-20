@@ -17,11 +17,13 @@
           class="col col-text-section wow animate__animated animate__fadeInUp"
         >
           <p class="text-col">
-            Identify your patient or patients with a chronic wound. In order for
-            our Insurance Verification Request to get approved, the patient
-            needs medical notes proving treatment has been attempted to heal the
-            chronic wound for over 30 days. After IVR is approved, we will ship
-            you your Amniotic Tissue
+            After the physician receives the Amniotic Tissue, they can begin
+            applying it to the chronic wound. They take photos before each
+            application using a ruler to track the healing progress. These
+            photos will demonstrate the medical necessity of the treatment, show
+            the progress of healing, and confirm that the appropriate size patch
+            was used each week. After IVR is approved, the patient can be
+            treated
           </p>
         </div>
       </div>
@@ -63,11 +65,12 @@
           class="col col-text-section wow animate__animated animate__fadeInUp"
         >
           <p class="text-col">
-            Our wound billing specialists will comb through your medical notes
-            in your EMR to make sure the proper verbiage is used to avoid any
-            future clawbacks. This is the #1 reason physicians and NP's receive
-            clawbacks from Medicare by improperly documenting the patient's
-            progress, current state, and diagnosis codes.
+            Our wound billing specialists will comb through each physicians'
+            medical notes in their EMR to make sure the proper verbiage is used
+            to avoid any future clawbacks. The biggest reason that physicians
+            and NP's receive clawbacks from Medicare is because of improper
+            documentation of the patient's progress, current state, and
+            diagnosis codes.
           </p>
         </div>
       </div>

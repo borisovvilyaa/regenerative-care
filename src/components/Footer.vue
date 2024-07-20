@@ -42,7 +42,9 @@
             <div class="widget no-box">
               <h5 class="widget-title">Contact Us<span></span></h5>
               <ul class="thumbnail-widget">
-                <li><div class="thumb-content">info@domain.com</div></li>
+                <li>
+                  <div class="thumb-content">Regenerativecarellc@gmail.com</div>
+                </li>
               </ul>
             </div>
           </div>

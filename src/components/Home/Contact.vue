@@ -9,23 +9,19 @@
           <ul class="contact-list">
             <li>833-Regenerative Care</li>
             <li>
-              NEW CUSTOMERS:
-              <a href="mailto:ORDERS@RegenerativeCare.COM"
-                >ORDERS@RegenerativeCare.COM</a
+              Email:
+              <a href="mailto:Regenerativecarellc@gmail.com"
+                >Regenerativecarellc@gmail.com</a
               >
             </li>
             <li>
-              CURRENT CUSTOMERS:
-              <a href="mailto:SUPPORT@RegenerativeCare.COM"
-                >SUPPORT@RegenerativeCare.COM</a
+              For referrals:
+              <a href="mailto:Regenerativecarellc@gmail.com"
+                >regenerativecarereferrals@gmail.com</a
               >
             </li>
-            <li>
-              DISTRIBUTOR INQUIRIES:
-              <a href="mailto:DISTRIBUTOR@RegenerativeCare.COM"
-                >DISTRIBUTOR@RegenerativeCare.COM</a
-              >
-            </li>
+            <li>Daniel Rabkin - (323)-961-7165</li>
+            <li>Philip Romanov - (424)-283-196</li>
           </ul>
         </div>
       </div>
