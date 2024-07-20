@@ -3,11 +3,11 @@
     <div class="container">
       <h2>
         <span class="journey wow animate__animated animate__fadeInLeft"
-          >YOUR JOURNEY TO RECOVERY</span
+          >Recovery Is Right</span
         >
         <br />
         <span class="begins-now wow animate__animated animate__fadeInRight"
-          >BEGINS NOW</span
+          >Around The Corner</span
         >
       </h2>
       <h3 class="subtitle wow animate__animated animate__fadeInUp">
@@ -37,7 +37,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 .main {
+  font-family: "Roboto", sans-serif !important;
+
   background-image: url("@/assets/Home/Home.png");
   background-size: cover;
   background-position: center;
@@ -51,7 +55,7 @@ export default {
   }
 
   h2 {
-    max-width: 700px;
+    max-width: 750px;
     color: #ffffff;
     font-size: 112px;
     text-decoration: none;
