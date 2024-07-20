@@ -5,7 +5,7 @@
     <div class="container">
       <!-- Podiatrists Section -->
       <h2 class="title-col wow animate__animated animate__fadeInUp">
-        How we verify payment insurance
+        How we verify the patients' insurance
       </h2>
       <div class="d-flex flex-column-reverse flex-md-row">
         <div
@@ -28,7 +28,7 @@
 
       <!-- Dermatologists Section -->
       <h2 class="title-col wow animate__animated animate__fadeInUp">
-        How our patients heals
+        How our patients heal
       </h2>
       <div class="d-flex flex-column-reverse flex-md-row">
         <div
@@ -51,7 +51,7 @@
 
       <!-- Surgeons Section -->
       <h2 class="title-col wow animate__animated animate__fadeInUp">
-        How we provide clawbacks
+        How we prevent clawbacks
       </h2>
       <div class="d-flex flex-column-reverse flex-md-row">
         <div

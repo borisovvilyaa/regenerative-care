@@ -41,6 +41,12 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif !important;
+}
+
 .preloader {
   position: fixed;
   top: 0;
@@ -66,6 +72,7 @@ export default {
   background-repeat: no-repeat;
   animation: l2 1s infinite alternate;
 }
+
 @keyframes l2 {
   0%,
   25% {
