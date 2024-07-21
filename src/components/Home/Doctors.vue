@@ -66,12 +66,12 @@
         <div
           class="col-12 text-center wow animate__animated animate__fadeInUp animate__fast"
         >
-          <router-link
-            to="/contacts"
+          <a
+            href="/#Contacts"
             class="btn btn-get wow animate__animated animate__fadeInUp"
           >
             Get in Touch
-          </router-link>
+          </a>
         </div>
       </div>
     </div>
