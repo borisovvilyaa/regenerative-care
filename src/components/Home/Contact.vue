@@ -20,8 +20,8 @@
                 >regenerativecarereferrals@gmail.com</a
               >
             </li>
-            <li>Daniel Rabkin - (323)-961-7165</li>
-            <li>Philip Romanov - (424)-283-196</li>
+            <li>Daniel Rabkin-CEO-(323)-961-7165</li>
+            <li>Philip Romanov-CEO-(424)-283-1961</li>
           </ul>
         </div>
       </div>
