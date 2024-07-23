@@ -1,18 +1,14 @@
 <template>
   <div>
-    <!-- Показываем прелоадер только если isLoading равно true -->
     <transition name="fade">
       <div v-if="isLoading" class="preloader">
-        <!-- Анимированный прелоадер -->
         <div class="loader"></div>
       </div>
     </transition>
 
-    <!-- Рендерим заголовок и контент только если isLoading равно false -->
     <Header v-if="!isLoading"></Header>
     <router-view v-if="!isLoading" />
 
-    <!-- Добавляем футер после загрузки данных -->
     <Footer v-if="!isLoading"></Footer>
   </div>
 </template>
@@ -28,14 +24,13 @@ export default {
   },
   data() {
     return {
-      isLoading: true, // Начальное состояние загрузки
+      isLoading: true,
     };
   },
   mounted() {
-    // Имитация загрузки данных (можно заменить на реальный код загрузки данных)
     setTimeout(() => {
-      this.isLoading = false; // Устанавливаем isLoading в false после загрузки данных
-    }, 1000); // Пример задержки загрузки (2 секунды)
+      this.isLoading = false;
+    }, 1000);
   },
 };
 </script>
@@ -47,14 +42,13 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9); /* Черный фон с прозрачностью 90% */
+  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999; /* Поверх других элементов */
+  z-index: 999;
 }
 
-/* HTML: <div class="loader"></div> */
 .loader {
   width: 40px;
   aspect-ratio: 1;
