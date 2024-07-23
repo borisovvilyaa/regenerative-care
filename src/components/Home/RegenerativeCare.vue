@@ -5,7 +5,7 @@
     <div class="container">
       <!-- Podiatrists Section -->
       <h2 class="title-col wow animate__animated animate__fadeInUp">
-        How we verify the patients' insurance
+        How we verify the patients' insurance.
       </h2>
       <div class="d-flex flex-column-reverse flex-md-row">
         <div
@@ -23,7 +23,7 @@
             photos will demonstrate the medical necessity of the treatment, show
             the progress of healing, and confirm that the appropriate size patch
             was used each week. After IVR is approved, the patient can be
-            treated
+            treated.
           </p>
         </div>
       </div>
